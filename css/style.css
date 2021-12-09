@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background:#fff;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.card i {
+    position: absolute;
+    top:40px;
+    left: -15px;
+    width: 280px;
+    height: 50px;
+    background: #f69075;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+}
+
+.card i::before {
+    content: '';
+    position: absolute;
+    top:50px;
+    width: 15px;
+    height: 30px;
+    background: #f69075;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.card i::after {
+    content: '';
+    position: absolute;
+    top:50px;
+    width: 15px;
+    height: 15px;
+    background: #f69075;  
+}
+
+.role {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.developer-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #f69075;
+    padding: 14px 28px;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
